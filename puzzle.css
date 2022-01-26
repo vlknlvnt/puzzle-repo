@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #E6E6E6;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+.puzzle-main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.puzzle-table {
+  width: 400px;
+  height: 400px;
+  margin: 10px auto;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+  font-family: 'Orbitron', sans-serif;
+  color: #212529;
+}
+ul li {
+  background-color: #DADADA;
+  width: 25%;
+  height: auto;
+  border: 1px solid #212529;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.empty {
+  background: white;
+  border: 2px solid #212529;
+}
+
+h1 {
+  color: #212529;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}
+
+/* Modal styles başladı */
+#modal {
+  width: 40%;
+  height: 300px;
+  background: #E4FDE1;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Orbitron', sans-serif;
+}
+
+#modal #message {
+  color: #212529;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.hide {
+  display: none;
+}
+#modal #header {
+  text-align: right;
+  padding: 5px 10px;
+}
+#modal #header button {
+  padding: 10px;
+  border: 0px;
+  background: #DADADA;
+  color: #E4FDE1;
+  cursor: pointer;
+}
+
+#return {
+  font-family: 'Muli', sans-serif;
+  color: #212529;
+  margin: 2em 1em 0;
+  font-size: 1rem;
+}
+
+.btn {
+  display: block;
+}
+
+.fa {
+  font-size: 1rem;
+  color: #212529;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* Modal styles bitti */
+
+
+/*  footer başladı  */
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #E6E6E6;
+  font-family: 'Muli', sans-serif;
+}
+/*  footer bitti  */
+
+/* media başladı */
+
+.puzzle-main {
+  height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  .puzzle-main {
+    height: 70vh;
+}
+  .puzzle-table {
+    width: 370px;
+  }
+
+ }
+/* media bitti */
